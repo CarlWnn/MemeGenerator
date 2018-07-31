@@ -1,0 +1,139 @@
+.app {
+  text-align: center;
+  width: 90%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  border: 1px solid;
+  margin: 10px;
+  /* display: flex; */
+}
+
+
+.btn-toolbar {
+  display: flex; 
+   /* justify-content: space-around;  */
+   height: 50px;
+   margin: auto 0;
+   font-size: 10px;
+}  
+
+.btn-tall{
+width : 30px; 
+margin-right: 10px;
+}
+
+.btn-square{
+  width : 50px; 
+  margin-right: 10px;
+  }
+
+.btn-wide{
+  width: 80px;
+}
+
+.font-text {
+  vertical-align: middle;
+}
+.custom-select {
+  width:50%;
+  display:inline-block;
+}
+
+  
+
+ /* .flex-container {
+  display: flex; 
+   justify-content: space-around; 
+}  */
+
+/* 
+.size-box-tall {
+  width: 5px; 
+  height: 50px;
+  text-align: center;
+}
+
+.size-box-square {
+  width: 10px;
+  height: 15px;
+  text-align: center;
+}
+
+.size-box-wide {
+  width: 20px;
+  height: 15px;
+  text-align: center;
+} */
+
+.card-header h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: .5px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+textarea {
+  border: 2px solid lime;
+  position: absolute;
+  left: 0px;
+  top : 0px;
+  height: 200px;
+    /* opacity:0; */
+
+
+}
+
+.card-body{
+  height: 500px;
+  width: 500px; 
+  /* background-image:  */
+  position:relative;
+
+}
+
+.hidden{
+  display:none; 
+}
+
+ canvas [canvas]{
+  position: absolute;
+  left: 0px;
+  top : 0px;
+} 
+
+img [image]{
+  position: absolute;
+  left: 0px;
+  top : 0px;
+}
