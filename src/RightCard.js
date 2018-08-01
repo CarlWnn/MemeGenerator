@@ -12,7 +12,7 @@ class RightCard extends Component {
 </div>
 
 <div>
-<Filter/>
+<Filter onFilterChange= {this.props.onFilterChange}/>
 </div> 
 
 <div>

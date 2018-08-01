@@ -3,9 +3,8 @@ import './Size.css';
 
 class Size extends Component {
 
-  
     
-      handleClick=(h)=>{
+      setSize=(h)=>{
         //this.setState({height: e.target.height})
         //let height= e.target.height;
       return ()=>{
@@ -27,9 +26,9 @@ class Size extends Component {
 
           {/* <div className='flex-container'> */}
           <div className='btn-toolbar'>
-            <button  className='btn-tall' onClick={this.handleClick(800)}> tall </button>
-            <button height='500' className='btn-square' onClick={this.handleClick(500)}> square </button>
-            <button height='200' className='btn-wide' onClick={this.handleClick(300)}> wide </button>
+            <button className='btn-tall' onClick={this.setSize(800)}> tall </button>
+            <button height='500' className='btn-square' onClick={this.setSize(500)}> square </button>
+            <button height='200' className='btn-wide' onClick={this.setSize(300)}> wide </button>
 
 
           </div>
