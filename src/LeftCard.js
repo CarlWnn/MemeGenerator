@@ -13,13 +13,14 @@ class LeftCard extends Component {
              "https://images.unsplash.com/photo-1421749810611-438cc492b581?fm=jpg&w=364",
              "https://images.unsplash.com/photo-1449960238630-7e720e630019?fm=jpg&w=364",
              "https://images.unsplash.com/photo-1433190152045-5a94184895da?fm=jpg&w=364"
-        ]}
+        ]};
     }
 
     handleClick=(event)=>{
         //console.log(event.target);
         let src_selected= event.target.src;
         this.props.selectImage(src_selected);
+
     }
 
     render() {
@@ -31,7 +32,7 @@ class LeftCard extends Component {
             </div>
 
                {this.state.imageList.map(
-                   (imageItem, index) => <ImageItem src={imageItem} handleClick={this.handleClick}/> 
+                   (imageItem, index) => <ImageItem key={index} src={imageItem} onClick={this.handleClick}/> 
                )}
 
             </div>

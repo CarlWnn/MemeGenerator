@@ -1,65 +1,8 @@
 .app {
   text-align: center;
-  width: 90%;
+  width: 80%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.card {
-  border: 1px solid;
-  margin: 10px;
-  /* display: flex; */
-}
-
-
-.btn-toolbar {
-  display: flex; 
-   /* justify-content: space-around;  */
-   height: 50px;
-   margin: auto 0;
-   font-size: 10px;
-}  
-
-.btn-tall{
-width : 30px; 
-margin-right: 10px;
-}
-
-.btn-square{
-  width : 50px; 
-  margin-right: 10px;
-  }
-
-.btn-wide{
-  width: 80px;
-}
 
 .font-text {
   vertical-align: middle;
@@ -69,31 +12,21 @@ margin-right: 10px;
   display:inline-block;
 }
 
-  
 
- /* .flex-container {
-  display: flex; 
-   justify-content: space-around; 
-}  */
 
-/* 
-.size-box-tall {
-  width: 5px; 
-  height: 50px;
-  text-align: center;
+.Canvas{
+  width: 100%;
+  height: 800px;
 }
 
-.size-box-square {
-  width: 10px;
-  height: 15px;
-  text-align: center;
-}
 
-.size-box-wide {
-  width: 20px;
-  height: 15px;
-  text-align: center;
-} */
+.canevas-card {
+  border: 1px solid;
+  max-width: 100%;
+  max-height: 100%;
+
+  /* display: flex; */
+}
 
 .card-header h4 {
   text-transform: uppercase;
@@ -103,22 +36,15 @@ margin-right: 10px;
   font-weight: 400;
 }
 
-textarea {
-  border: 2px solid lime;
-  position: absolute;
-  left: 0px;
-  top : 0px;
-  height: 200px;
-    /* opacity:0; */
 
+.canevas-body{
+  /* height: 800px; */
+  /* width: 500px;  */
+  max-height: 100%;
+  max-width: 100%;
 
-}
-
-.card-body{
-  height: 500px;
-  width: 500px; 
-  /* background-image:  */
-  position:relative;
+  position: relative;
+  /* margin:0 auto ; */
 
 }
 
@@ -126,14 +52,28 @@ textarea {
   display:none; 
 }
 
- canvas [canvas]{
-  position: absolute;
-  left: 0px;
-  top : 0px;
+
+canvas{
+  max-height: 100%;
+  max-width: 100%;
+  /* margin:0 auto ; */
+
 } 
 
-img [image]{
+[image]{
+  /* max-height: 100%; */
+  /* max-width: 100%; */
+  /* height:auto; */
+  /* width: auto; */
+  /* display: table-cell;  */
+}
+
+
+textarea {
+  border: 2px solid blue;
   position: absolute;
   left: 0px;
   top : 0px;
+  max-height: 100%;
+  background: transparent;
 }
