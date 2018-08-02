@@ -1,0 +1,11 @@
+/* .btn-font-color{ */
+  button{
+ background: rgb(68, 68, 68);
+  border-radius: 3px;
+  height:28px;
+  width:28px; 
+}
+
+.color-container{
+  display:flex;
+}

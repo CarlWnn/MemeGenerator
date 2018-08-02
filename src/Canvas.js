@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 class Canvas extends Component {
     
     render() {
-        
+        //console.log(this.props.font_size)
+
+
+
         return (
 
             <div className="canevas-card">
@@ -13,13 +16,16 @@ class Canvas extends Component {
                 </div>
 
 
-                <div className='canevas-body' style={{"height": this.props.height}}>
+                <div className='canevas-body' style={{height: this.props.height}}>
 
-                    <img className="canvas-img" ref="image" alt="no description" 
-                    src={this.props.src} style={{"height": this.props.height, "filter": this.props.filter}}
-                      />
+                            <img className="canvas-img" ref="image" alt="no description" 
+                            src={this.props.src} style={{height: this.props.height, filter: this.props.filter}}
+                            />
 
-                    <textarea defaultValue= "Others have seen what is and asked why. I have seen what could be and asked why not. Pablo Picasso"/> 
+                            <textarea defaultValue= "Others have seen what is and asked why. I have seen what could be and asked why not. Pablo Picasso"
+                            style={{fontFamily:this.props.font_family, fontSize:this.props.font_size, 
+                                fontWeight:this.props.bold, fontStyle: this.props.italic, color:this.props.font_color}}
+                            /> 
 
                 </div>
 

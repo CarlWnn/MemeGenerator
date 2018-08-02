@@ -22,10 +22,11 @@ class Size extends Component {
 
           <div className='card-header'>
             <h4>SIZES</h4>
+            line
           </div>
 
           {/* <div className='flex-container'> */}
-          <div className='btn-toolbar'>
+          <div className='size-picker'>
             <button className='btn-tall' onClick={this.setSize(800)}> tall </button>
             <button height='500' className='btn-square' onClick={this.setSize(500)}> square </button>
             <button height='200' className='btn-wide' onClick={this.setSize(300)}> wide </button>

@@ -18,15 +18,15 @@ class Filter extends Component {
                  <h4> FILTERS </h4>
                </div>
 
-                    return <div>
+                <div>
                     <select className="Filter"  ref="select" onChange={this.applyFilter}>
-                        <option value="none">None</option>
+                        <option value=" ">None</option> 
                         <option value="contrast(50%)">Light contrast</option>
                         <option value="contrast(200%)">Heavy contrast</option>
-                        <option value="blur(4px)">Light blur</option>
-                        <option value="blur(9px)">Heavy blur</option>
+                        <option value="blur(2px)">Light blur</option>
+                        <option value="blur(6px)">Heavy blur</option>
                     </select>
-                    </div>
+                </div>
 
             </div>
         );
