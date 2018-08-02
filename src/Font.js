@@ -73,9 +73,9 @@ class Font extends Component {
                     Font size:
                     <select ref="size"  onChange={this.selectFontSize}>
                             <option value="22">22</option>
-                            <option value="36">36</option>
-                            <option value="42">42</option>
-                            <option value="48">48</option>
+                            <option value="26">26</option>
+                            <option value="30">30</option>
+                            <option value="34">34</option>
                     </select>
                 </div>
 

@@ -1,31 +1,28 @@
-
-.card-body{
-}
+  .card-body{
+    text-align: start;
+    padding:10px;
+  }
 
 .font-family{
    display: inline-flex; 
 }
 
-.font-size{
-}
-
 .font-style{
-  margin:10px;
+  margin:5px;
   display:flex; 
+  /* justify-content: space-around ; */
+  
+
 }
-
-
 
 .box-color {
   margin:5px;
   display: flex;
   flex-direction: row;
-    /* border-radius: 3px; */
-    justify-content: space-evenly ;
-  }
+  justify-content: space-evenly ;
+}
 
   button{
-    width:100px;
+    width:100em;
     height:30px;
   }
-  
