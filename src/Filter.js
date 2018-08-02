@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
 
 class Filter extends Component {
+
+    applyFilter=()=> {
+        let val = this.refs.select.value;
+        console.log(val);
+        this.props.onFilterChange(val);
+      }
+    
     render() {
         return (
-                        //  <header> FILTERS </header>
 
             < div className='card'>
-               
+
+
                <div className='card-header'>
                  <h4> FILTERS </h4>
                </div>
 
-
-
-<select className="custom-select">
-  {/* <option selected=""> None </option> */}
-  <option value="1">Light Contrast</option>
-  <option value="2">Heavy Contrast</option>
-  <option value="3">Light Blur</option>
-  <option value="4">Heavy Blur </option>
-</select>
-
-
+                <div>
+                    <select className="Filter"  ref="select" onChange={this.applyFilter}>
+                        <option value=" ">None</option> 
+                        <option value="contrast(50%)">Light contrast</option>
+                        <option value="contrast(200%)">Heavy contrast</option>
+                        <option value="blur(2px)">Light blur</option>
+                        <option value="blur(6px)">Heavy blur</option>
+                    </select>
+                </div>
 
             </div>
         );

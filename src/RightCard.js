@@ -7,17 +7,23 @@ class RightCard extends Component {
     render() {
         return (
             <div className='card'>
-<div>
-<Size changeSize={this.props.changeSize}/>
-</div>
+                                
+                    <div>
+                    <Size changeSize={this.props.changeSize}/>
+                    </div>
 
-<div>
-<Filter/>
-</div> 
+                    <div>
+                    <Filter onFilterChange= {this.props.onFilterChange}/>
+                    </div> 
 
-<div>
-<Font/>
-</div>
+                    <div>
+                    <Font selectFontFamily={this.props.selectFontFamily}
+                          selectFontSize={this.props.selectFontSize}
+                          handleBold={this.props.handleBold}
+                          handleItalic= {this.props.handleItalic}
+                          handleFontColor= {this.props.handleFontColor}
+                    />
+                    </div>
                 
             </div>
                 

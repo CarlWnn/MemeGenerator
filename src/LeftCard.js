@@ -16,9 +16,11 @@ class LeftCard extends Component {
         ]};
     }
 
-    handleClick=(event)=>{
-        //console.log(event.target);
-        let src_selected= event.target.src;
+
+    pickImage=(e)=>{
+        //event.preventDefault();
+        console.log(e.target);
+        let src_selected= e.target.src;
         this.props.selectImage(src_selected);
 
     }
@@ -31,9 +33,11 @@ class LeftCard extends Component {
              <h4 >IMAGES</h4>
             </div>
 
+               <div onClick= {this.pickImage}>
                {this.state.imageList.map(
-                   (imageItem, index) => <ImageItem key={index} src={imageItem} onClick={this.handleClick}/> 
+                   (imageItem, index) => <ImageItem key={index} src={imageItem} /> 
                )}
+               </div>
 
             </div>
         );

@@ -11,7 +11,7 @@ class ImageItem extends Component {
                 <img className="img-thumbnail" 
                 src= {this.props.src}
                 alt="Thumbnail"
-                onClick = {this.props.handleClick}/>
+                onClick = {this.props.pickImage}/>
             </div>
         );
     }
