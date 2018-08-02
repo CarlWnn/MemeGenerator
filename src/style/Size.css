@@ -1,23 +1,29 @@
 .size-picker {
     display: flex; 
      /* justify-content: space-around;  */
-     height: 5  0px;
-     margin: auto 0;
+     margin: 10px;
      font-size: 10px;
+     height: 60px;
+
   }  
   
   
 .btn-tall{
+  height: 60px;
     width : 30px; 
     margin-right: 10px;
+
 }
     
 .btn-square{
+  height: 60px;
       width : 50px; 
       margin-right: 10px;
+
 }
     
 .btn-wide{
+  height: 60px;
       width: 80px;
 }
 
