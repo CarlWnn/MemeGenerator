@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Font.css';
+import './style/Font.css';
 
 class Font extends Component {
 
     selectFontFamily=()=>{
-       let val= this.refs.selectfamily.value;
+       let val= this.refs.family.value;
     //    console.log(val);
        this.props.selectFontFamily(val);
     }
@@ -53,14 +53,15 @@ class Font extends Component {
             <div className='card'>
 
                <div className='card-header'>
-                 <h4> TEXT </h4>
+                 <h4> FONTS </h4>
                </div>
 
 
             <div className='card-body'>
 
-                <div>
-                    <select className="font-family" ref="selectfamily" onChange={this.selectFontFamily}>
+                <div className="font-family" > 
+                    Font:
+                    <select ref="family" onChange={this.selectFontFamily}>
                         <option value="Arial">Arial </option>
                         <option value="Georgia">Georgia</option>
                         <option value="Helvetica"> Helvetica </option>
@@ -69,7 +70,8 @@ class Font extends Component {
                 </div>    
 
                 <div className='font-size'>
-                    <select className="Font-Size" ref="size"  onChange={this.selectFontSize}>
+                    Font size:
+                    <select ref="size"  onChange={this.selectFontSize}>
                             <option value="22">22</option>
                             <option value="36">36</option>
                             <option value="42">42</option>
@@ -85,13 +87,13 @@ class Font extends Component {
             </div>
             
 
-            <div className='color-container'>
-                <button value='white'   style={{backgroundColor:'white'}} onClick={this.handleFontColor}>  </button>
-                <button value='black'   style={{backgroundColor:'black'}} onClick={this.handleFontColor}>  </button>
-                <button value='grey'    style={{backgroundColor:'grey'}} onClick={this.handleFontColor}> </button>
-                <button value='blue'    style={{backgroundColor:'blue'}} onClick={this.handleFontColor}>  </button>
-                <button value='yellow'  style={{backgroundColor:'yellow'}} onClick={this.handleFontColor}>  </button>
-                <button value='green'   style={{backgroundColor:'green'}} onClick={this.handleFontColor}>  </button>
+            <div className='box-color'>
+                <button  class="btn btn-primary" value='white'   style={{backgroundColor:'white'}} onClick={this.handleFontColor}>  </button>
+                <button class="btn btn-primary" value='black'   style={{backgroundColor:'black'}} onClick={this.handleFontColor}>  </button>
+                <button class="btn btn-primary" value='grey'    style={{backgroundColor:'grey'}} onClick={this.handleFontColor}> </button>
+                <button class="btn btn-primary" value='blue'    style={{backgroundColor:'blue'}} onClick={this.handleFontColor}>  </button>
+                <button class="btn btn-primary" value='yellow'  style={{backgroundColor:'yellow'}} onClick={this.handleFontColor}>  </button>
+                <button class="btn btn-primary" value='green'   style={{backgroundColor:'green'}} onClick={this.handleFontColor}>  </button>
             </div>
 
             

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './style/Canevas.css';
 
 class Canvas extends Component {
     
@@ -9,7 +10,7 @@ class Canvas extends Component {
 
         return (
 
-            <div className="canevas-card">
+            <div className="card">
           
                 <div className='card-header'>
                     <h4 >CANVAS</h4>

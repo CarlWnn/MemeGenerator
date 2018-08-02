@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './style/App.css';
 import LeftCard from './LeftCard';
 import Canvas from './Canvas';
 import RightCard from './RightCard';
@@ -38,7 +38,7 @@ selectFontFamily=(val)=>{
 selectFontSize=(val)=>{
 
   // console.log(typeof val)
-  val = parseInt(val,10);
+  val = parseInt(val);
   this.setState({font_size:val}, ()=>{
   console.log(this.state.font_size);
 })

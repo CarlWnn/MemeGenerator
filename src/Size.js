@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Size.css';
+import './style/Size.css';
 
 class Size extends Component {
 
@@ -22,7 +22,6 @@ class Size extends Component {
 
           <div className='card-header'>
             <h4>SIZES</h4>
-            line
           </div>
 
           {/* <div className='flex-container'> */}

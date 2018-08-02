@@ -18,8 +18,8 @@ class Filter extends Component {
                  <h4> FILTERS </h4>
                </div>
 
-                <div>
-                    <select className="Filter"  ref="select" onChange={this.applyFilter}>
+                <div className="card">
+                    <select  ref="select" onChange={this.applyFilter}>
                         <option value=" ">None</option> 
                         <option value="contrast(50%)">Light contrast</option>
                         <option value="contrast(200%)">Heavy contrast</option>

@@ -33,7 +33,7 @@ class LeftCard extends Component {
              <h4 >IMAGES</h4>
             </div>
 
-               <div onClick= {this.pickImage}>
+               <div className="image-container" onClick= {this.pickImage}>
                {this.state.imageList.map(
                    (imageItem, index) => <ImageItem key={index} src={imageItem} /> 
                )}
